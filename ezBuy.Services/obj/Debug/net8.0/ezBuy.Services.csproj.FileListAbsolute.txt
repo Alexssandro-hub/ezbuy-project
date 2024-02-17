@@ -1,0 +1,17 @@
+D:\ezBuyProject\ezBuy.Services\bin\Debug\net8.0\ezBuy.Services.deps.json
+D:\ezBuyProject\ezBuy.Services\bin\Debug\net8.0\ezBuy.Services.dll
+D:\ezBuyProject\ezBuy.Services\bin\Debug\net8.0\ezBuy.Services.pdb
+D:\ezBuyProject\ezBuy.Services\bin\Debug\net8.0\ezBuy.Domain.dll
+D:\ezBuyProject\ezBuy.Services\bin\Debug\net8.0\ezBuy.Infrastructure.dll
+D:\ezBuyProject\ezBuy.Services\bin\Debug\net8.0\ezBuy.Domain.pdb
+D:\ezBuyProject\ezBuy.Services\bin\Debug\net8.0\ezBuy.Infrastructure.pdb
+D:\ezBuyProject\ezBuy.Services\obj\Debug\net8.0\ezBuy.Services.csproj.AssemblyReference.cache
+D:\ezBuyProject\ezBuy.Services\obj\Debug\net8.0\ezBuy.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\ezBuyProject\ezBuy.Services\obj\Debug\net8.0\ezBuy.Services.AssemblyInfoInputs.cache
+D:\ezBuyProject\ezBuy.Services\obj\Debug\net8.0\ezBuy.Services.AssemblyInfo.cs
+D:\ezBuyProject\ezBuy.Services\obj\Debug\net8.0\ezBuy.Services.csproj.CoreCompileInputs.cache
+D:\ezBuyProject\ezBuy.Services\obj\Debug\net8.0\ezBuy.Services.csproj.CopyComplete
+D:\ezBuyProject\ezBuy.Services\obj\Debug\net8.0\ezBuy.Services.dll
+D:\ezBuyProject\ezBuy.Services\obj\Debug\net8.0\refint\ezBuy.Services.dll
+D:\ezBuyProject\ezBuy.Services\obj\Debug\net8.0\ezBuy.Services.pdb
+D:\ezBuyProject\ezBuy.Services\obj\Debug\net8.0\ref\ezBuy.Services.dll

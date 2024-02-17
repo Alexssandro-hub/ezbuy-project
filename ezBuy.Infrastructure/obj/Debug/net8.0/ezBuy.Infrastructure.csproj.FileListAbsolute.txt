@@ -1,0 +1,14 @@
+D:\ezBuyProject\ezBuy.Infrastructure\bin\Debug\net8.0\ezBuy.Infrastructure.deps.json
+D:\ezBuyProject\ezBuy.Infrastructure\bin\Debug\net8.0\ezBuy.Infrastructure.runtimeconfig.json
+D:\ezBuyProject\ezBuy.Infrastructure\bin\Debug\net8.0\ezBuy.Infrastructure.dll
+D:\ezBuyProject\ezBuy.Infrastructure\bin\Debug\net8.0\ezBuy.Infrastructure.pdb
+D:\ezBuyProject\ezBuy.Infrastructure\obj\Debug\net8.0\ezBuy.Infrastructure.csproj.AssemblyReference.cache
+D:\ezBuyProject\ezBuy.Infrastructure\obj\Debug\net8.0\ezBuy.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\ezBuyProject\ezBuy.Infrastructure\obj\Debug\net8.0\ezBuy.Infrastructure.AssemblyInfoInputs.cache
+D:\ezBuyProject\ezBuy.Infrastructure\obj\Debug\net8.0\ezBuy.Infrastructure.AssemblyInfo.cs
+D:\ezBuyProject\ezBuy.Infrastructure\obj\Debug\net8.0\ezBuy.Infrastructure.csproj.CoreCompileInputs.cache
+D:\ezBuyProject\ezBuy.Infrastructure\obj\Debug\net8.0\ezBuy.Infrastructure.dll
+D:\ezBuyProject\ezBuy.Infrastructure\obj\Debug\net8.0\refint\ezBuy.Infrastructure.dll
+D:\ezBuyProject\ezBuy.Infrastructure\obj\Debug\net8.0\ezBuy.Infrastructure.pdb
+D:\ezBuyProject\ezBuy.Infrastructure\obj\Debug\net8.0\ezBuy.Infrastructure.genruntimeconfig.cache
+D:\ezBuyProject\ezBuy.Infrastructure\obj\Debug\net8.0\ref\ezBuy.Infrastructure.dll
