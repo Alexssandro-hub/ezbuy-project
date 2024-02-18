@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ezBuy.Abstractions\ezBuy.Abstractions.csproj" />
-    <ProjectReference Include="..\ezBuy.Business\ezBuy.Business.csproj" />
+    <ProjectReference Include="..\ezBuy.Business\ezBuy.Business.Layer.csproj" />
     <ProjectReference Include="..\ezBuy.Extensions\ezBuy.Extensions.csproj" />
   </ItemGroup>
 

@@ -2028,7 +2028,7 @@
           "bin/placeholder/ezBuy.Abstractions.dll": {}
         }
       },
-      "ezBuy.Business/1.0.0": {
+      "ezBuy.Business.Layer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -2037,25 +2037,25 @@
           "ezBuy.Extensions": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/ezBuy.Business.dll": {}
+          "bin/placeholder/ezBuy.Business.Layer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ezBuy.Business.dll": {}
+          "bin/placeholder/ezBuy.Business.Layer.dll": {}
         }
       },
-      "ezBuy.Controllers/1.0.0": {
+      "ezBuy.Controllers.Layer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "ezBuy.Abstractions": "1.0.0",
-          "ezBuy.Business": "1.0.0",
+          "ezBuy.Business.Layer": "1.0.0",
           "ezBuy.Extensions": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/ezBuy.Controllers.dll": {}
+          "bin/placeholder/ezBuy.Controllers.Layer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ezBuy.Controllers.dll": {}
+          "bin/placeholder/ezBuy.Controllers.Layer.dll": {}
         }
       },
       "ezBuy.DAO.Layer/1.0.0": {
@@ -5882,15 +5882,15 @@
       "path": "../ezBuy.Abstractions/ezBuy.Abstractions.csproj",
       "msbuildProject": "../ezBuy.Abstractions/ezBuy.Abstractions.csproj"
     },
-    "ezBuy.Business/1.0.0": {
+    "ezBuy.Business.Layer/1.0.0": {
       "type": "project",
-      "path": "../ezBuy.Business/ezBuy.Business.csproj",
-      "msbuildProject": "../ezBuy.Business/ezBuy.Business.csproj"
+      "path": "../ezBuy.Business/ezBuy.Business.Layer.csproj",
+      "msbuildProject": "../ezBuy.Business/ezBuy.Business.Layer.csproj"
     },
-    "ezBuy.Controllers/1.0.0": {
+    "ezBuy.Controllers.Layer/1.0.0": {
       "type": "project",
-      "path": "../ezBuy.Controllers/ezBuy.Controllers.csproj",
-      "msbuildProject": "../ezBuy.Controllers/ezBuy.Controllers.csproj"
+      "path": "../ezBuy.Controllers/ezBuy.Controllers.Layer.csproj",
+      "msbuildProject": "../ezBuy.Controllers/ezBuy.Controllers.Layer.csproj"
     },
     "ezBuy.DAO.Layer/1.0.0": {
       "type": "project",
@@ -5919,7 +5919,7 @@
       "MySql.EntityFrameworkCore >= 8.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0",
       "System.Data.SqlClient >= 4.8.6",
-      "ezBuy.Controllers >= 1.0.0",
+      "ezBuy.Controllers.Layer >= 1.0.0",
       "ezBuy.DAO.Layer >= 1.0.0"
     ]
   },
@@ -5950,8 +5950,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.csproj": {
-              "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.csproj"
+            "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.Layer.csproj": {
+              "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.Layer.csproj"
             },
             "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.DAO.Layer\\ezBuy.DAO.Layer.csproj": {
               "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.DAO.Layer\\ezBuy.DAO.Layer.csproj"

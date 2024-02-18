@@ -31,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ezBuy.Controllers\ezBuy.Controllers.csproj" />
+    <ProjectReference Include="..\ezBuy.Controllers\ezBuy.Controllers.Layer.csproj" />
     <ProjectReference Include="..\ezBuy.DAO.Layer\ezBuy.DAO.Layer.csproj" />
   </ItemGroup>
 

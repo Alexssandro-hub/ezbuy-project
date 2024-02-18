@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.csproj": {}
+    "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.Layer.csproj": {}
   },
   "projects": {
     "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\ezBuy.Abstractions.csproj": {
@@ -142,12 +142,12 @@
         }
       }
     },
-    "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.csproj": {
+    "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.csproj",
-        "projectName": "ezBuy.Controllers",
-        "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.csproj",
+        "projectUniqueName": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.Layer.csproj",
+        "projectName": "ezBuy.Controllers.Layer",
+        "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.Layer.csproj",
         "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
         "outputPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\obj\\",
         "projectStyle": "PackageReference",

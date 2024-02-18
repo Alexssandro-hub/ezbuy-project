@@ -1090,7 +1090,7 @@
           "bin/placeholder/ezBuy.Abstractions.dll": {}
         }
       },
-      "ezBuy.Business/1.0.0": {
+      "ezBuy.Business.Layer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -1099,10 +1099,10 @@
           "ezBuy.Extensions": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/ezBuy.Business.dll": {}
+          "bin/placeholder/ezBuy.Business.Layer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ezBuy.Business.dll": {}
+          "bin/placeholder/ezBuy.Business.Layer.dll": {}
         }
       },
       "ezBuy.DAO.Layer/1.0.0": {
@@ -3004,10 +3004,10 @@
       "path": "../ezBuy.Abstractions/ezBuy.Abstractions.csproj",
       "msbuildProject": "../ezBuy.Abstractions/ezBuy.Abstractions.csproj"
     },
-    "ezBuy.Business/1.0.0": {
+    "ezBuy.Business.Layer/1.0.0": {
       "type": "project",
-      "path": "../ezBuy.Business/ezBuy.Business.csproj",
-      "msbuildProject": "../ezBuy.Business/ezBuy.Business.csproj"
+      "path": "../ezBuy.Business/ezBuy.Business.Layer.csproj",
+      "msbuildProject": "../ezBuy.Business/ezBuy.Business.Layer.csproj"
     },
     "ezBuy.DAO.Layer/1.0.0": {
       "type": "project",
@@ -3023,7 +3023,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "ezBuy.Abstractions >= 1.0.0",
-      "ezBuy.Business >= 1.0.0",
+      "ezBuy.Business.Layer >= 1.0.0",
       "ezBuy.Extensions >= 1.0.0"
     ]
   },
@@ -3033,9 +3033,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.csproj",
-      "projectName": "ezBuy.Controllers",
-      "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.csproj",
+      "projectUniqueName": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.Layer.csproj",
+      "projectName": "ezBuy.Controllers.Layer",
+      "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.Layer.csproj",
       "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
       "outputPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\obj\\",
       "projectStyle": "PackageReference",
@@ -3057,8 +3057,8 @@
             "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\ezBuy.Abstractions.csproj": {
               "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\ezBuy.Abstractions.csproj"
             },
-            "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.csproj": {
-              "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.csproj"
+            "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.Layer.csproj": {
+              "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.Layer.csproj"
             },
             "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Extensions\\ezBuy.Extensions.csproj": {
               "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Extensions\\ezBuy.Extensions.csproj"

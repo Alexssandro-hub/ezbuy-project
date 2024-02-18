@@ -9,11 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ezBuy.DAO.Layer", "..\ezBuy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezBuy.Abstractions", "..\ezBuy.Abstractions\ezBuy.Abstractions.csproj", "{C9BFBA2D-4583-41CB-B1F4-E4423CB491D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezBuy.Business", "..\ezBuy.Business\ezBuy.Business.csproj", "{6B5CE765-2739-4ED8-BC7F-29CED1646975}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezBuy.Business.Layer", "..\ezBuy.Business\ezBuy.Business.Layer.csproj", "{6B5CE765-2739-4ED8-BC7F-29CED1646975}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezBuy.Extensions", "..\ezBuy.Extensions\ezBuy.Extensions.csproj", "{C101924F-06C6-4389-8230-C3BE259824AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezBuy.Controllers", "..\ezBuy.Controllers\ezBuy.Controllers.csproj", "{5574290C-42A0-4A3A-A6EA-20E52CF9F0BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezBuy.Controllers.Layer", "..\ezBuy.Controllers\ezBuy.Controllers.Layer.csproj", "{5574290C-42A0-4A3A-A6EA-20E52CF9F0BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

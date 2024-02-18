@@ -3013,9 +3013,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.csproj",
-      "projectName": "ezBuy.Business",
-      "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.csproj",
+      "projectUniqueName": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.Layer.csproj",
+      "projectName": "ezBuy.Business.Layer",
+      "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.Layer.csproj",
       "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
       "outputPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\obj\\",
       "projectStyle": "PackageReference",

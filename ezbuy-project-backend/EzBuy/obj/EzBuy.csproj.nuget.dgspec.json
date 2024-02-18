@@ -77,12 +77,12 @@
         }
       }
     },
-    "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.csproj": {
+    "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.csproj",
-        "projectName": "ezBuy.Business",
-        "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.csproj",
+        "projectUniqueName": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.Layer.csproj",
+        "projectName": "ezBuy.Business.Layer",
+        "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.Layer.csproj",
         "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
         "outputPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\obj\\",
         "projectStyle": "PackageReference",
@@ -142,12 +142,12 @@
         }
       }
     },
-    "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.csproj": {
+    "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.csproj",
-        "projectName": "ezBuy.Controllers",
-        "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.csproj",
+        "projectUniqueName": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.Layer.csproj",
+        "projectName": "ezBuy.Controllers.Layer",
+        "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.Layer.csproj",
         "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
         "outputPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\obj\\",
         "projectStyle": "PackageReference",
@@ -169,8 +169,8 @@
               "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\ezBuy.Abstractions.csproj": {
                 "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\ezBuy.Abstractions.csproj"
               },
-              "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.csproj": {
-                "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.csproj"
+              "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.Layer.csproj": {
+                "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\ezBuy.Business.Layer.csproj"
               },
               "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Extensions\\ezBuy.Extensions.csproj": {
                 "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Extensions\\ezBuy.Extensions.csproj"
@@ -392,8 +392,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.csproj": {
-                "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.csproj"
+              "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.Layer.csproj": {
+                "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\ezBuy.Controllers.Layer.csproj"
               },
               "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.DAO.Layer\\ezBuy.DAO.Layer.csproj": {
                 "projectPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.DAO.Layer\\ezBuy.DAO.Layer.csproj"

@@ -24,8 +24,8 @@ namespace EzBuy.AppContext
             modelBuilder.HasDefaultSchema(Schemas.RootSchema);
 
             modelBuilder.Entity<Tenant>()
-                .ToTable(nameof(Tenant), Schemas.RootSchema)
-                .HasKey(t => t.Id);
+                        .ToTable(nameof(Tenant), Schemas.RootSchema)
+                        .HasKey(t => t.Id);
 
             modelBuilder.Entity<User>()
                         .HasOne(e => e.Tenant)
