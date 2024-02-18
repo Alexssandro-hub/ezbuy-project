@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ezBuy.Abstractions\ezBuy.Abstractions.csproj" />
+    <ProjectReference Include="..\ezBuy.DAO.Layer\ezBuy.DAO.Layer.csproj" />
+    <ProjectReference Include="..\ezBuy.Extensions\ezBuy.Extensions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\Aggregates\" />
+    <Folder Include="Services\Base\" />
+    <Folder Include="Services\Custom\" />
+    <Folder Include="Services\Validation\" />
+  </ItemGroup>
+
+</Project>
