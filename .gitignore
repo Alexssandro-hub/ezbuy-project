@@ -1,0 +1,9 @@
+*.dll
+*.pdb
+*.cache
+*.txt
+*.v2
+*.vsidx
+*.suo
+*.bin
+*.exe
