@@ -1,5 +1,6 @@
 using System.Configuration;
 using ezBuy;
+using ezBuy.BusinessCore.Validation;
 using ezBuy.Infrastructure.DAO_Layer;
 using ezBuy.Providers.Interfaces;
 using ezBuy.Providers;
@@ -21,50 +22,51 @@ builder.Services.AddSwaggerGen();
 // Configuração para ler a connection string do appsettings.json
 builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
  
-ConfigureServices(builder.Services, builder.Configuration);
+//ConfigureServices(builder.Services, builder.Configuration);
 
-void ConfigureServices(IServiceCollection services, IConfiguration configuration)
-{
-    services.AddControllers();
+//void ConfigureServices(IServiceCollection services, IConfiguration configuration)
+//{  
+//    //services.AddScoped(typeof(TenantProvider));
+//    //services.AddScoped(typeof(MultiTenantDbContext));
+//    //services.AddScoped(typeof(RepositoryFactory));
+//    //services.AddScoped(typeof(FluentValidationService));
 
-    services.AddScoped<ITenantProvider, TenantProvider>();
-    services.AddDbContext<MultiTenantDbContext>(options =>
-        options.UseSqlServer(configuration.GetConnectionString("Server=ezBuy-local;Port=3306;Database=localhost;Uid=adminezbuy;Pwd=adminezbuy")));
+//    //services.AddDbContext<MultiTenantDbContext>(options =>
+//    //    options.UseSqlServer(configuration.GetConnectionString("Server=ezBuy-local;Port=3306;Database=localhost;Uid=adminezbuy;Pwd=adminezbuy")));
 
-    services.AddMvc();
-    services.AddMvcCore();
-}
+//    //services.AddMvc(); 
+//}
 
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo
-    {
-        Title = "EzBuy API",
-        Version = "v1"
-    });
-    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-    {
-        In = ParameterLocation.Header,
-        Description = "Please insert JWT with Bearer into field",
-        Name = "Authorization",
-        Type = SecuritySchemeType.ApiKey
-    });
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            Array.Empty<string>()
-        }
-    });
-});
+//builder.Services.AddSwaggerGen(c =>
+//{
+//    c.SwaggerDoc("v1", new OpenApiInfo
+//    {
+//        Title = "EzBuy API",
+//        Version = "v1"
+//    });
+//    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+//    {
+//        In = ParameterLocation.Header,
+//        Description = "Please insert JWT with Bearer into field",
+//        Name = "Authorization",
+//        Type = SecuritySchemeType.ApiKey
+//    });
+//    c.AddSecurityRequirement(new OpenApiSecurityRequirement {
+//        {
+//            new OpenApiSecurityScheme
+//            {
+//                Reference = new OpenApiReference
+//                {
+//                    Type = ReferenceType.SecurityScheme,
+//                    Id = "Bearer"
+//                }
+//            },
+//            Array.Empty<string>()
+//        }
+//    });
+//});
 
-builder.Services.AddAuthentication();
+//builder.Services.AddAuthentication();
 
 var app = builder.Build();
  

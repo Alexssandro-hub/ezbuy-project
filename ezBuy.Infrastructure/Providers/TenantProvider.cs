@@ -3,8 +3,13 @@ using ezBuy.Providers.Interfaces;
 
 namespace ezBuy.Providers
 {
-    public interface TenantProvider : ITenantProvider
+    public abstract class TenantProvider : ITenantProvider
     {
+        public TenantProvider()
+        {
+                
+        }
+
         public string GetCurrentTenantSchema()
         {
             return TenantsDescription.GetRootSchema();
