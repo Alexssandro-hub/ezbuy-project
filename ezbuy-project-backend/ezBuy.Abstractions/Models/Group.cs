@@ -18,5 +18,7 @@ namespace ezBuy.Abstractions.Models
         public int UserId { get; set; }
         public Tenant Tenant { get; set; }
         public int TenantId { get; set; }
+        public Rule? Rule { get; set; }
+        public int RuleId { get; set; }
     }
 }

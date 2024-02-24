@@ -1,0 +1,473 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy\\appcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|solutionrelative:appcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy\\migrations\\20240224064350_migr1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|solutionrelative:migrations\\20240224064350_migr1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9BFBA2D-4583-41CB-B1F4-E4423CB491D7}|..\\ezBuy.Abstractions\\ezBuy.Abstractions.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy.abstractions\\models\\tenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9BFBA2D-4583-41CB-B1F4-E4423CB491D7}|..\\ezBuy.Abstractions\\ezBuy.Abstractions.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy.abstractions\\mapping\\entitybuilder\\tenantmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|solutionrelative:migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Alex\\.nuget\\packages\\mysql.data\\8.3.0\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy\\ezbuy.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|solutionrelative:ezbuy.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5574290C-42A0-4A3A-A6EA-20E52CF9F0BB}|..\\ezBuy.Controllers\\ezBuy.Controllers.Layer.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy.controllers\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9BFBA2D-4583-41CB-B1F4-E4423CB491D7}|..\\ezBuy.Abstractions\\ezBuy.Abstractions.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy.abstractions\\models\\rule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9BFBA2D-4583-41CB-B1F4-E4423CB491D7}|..\\ezBuy.Abstractions\\ezBuy.Abstractions.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy.abstractions\\models\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74CF7578-3D59-445D-88C2-6565BCA3A0ED}|..\\ezBuy.DAO.Layer\\ezBuy.DAO.Layer.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy.dao.layer\\interfaces\\iapplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy\\appcontext\\schemas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|solutionrelative:appcontext\\schemas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5CE765-2739-4ED8-BC7F-29CED1646975}|..\\ezBuy.Business\\ezBuy.Business.Layer.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy.business\\services\\validation\\fluentvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9BFBA2D-4583-41CB-B1F4-E4423CB491D7}|..\\ezBuy.Abstractions\\ezBuy.Abstractions.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy.abstractions\\services\\ivalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9BFBA2D-4583-41CB-B1F4-E4423CB491D7}|..\\ezBuy.Abstractions\\ezBuy.Abstractions.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy.abstractions\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy\\services\\sqlconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5302FEF8-4039-45ED-9798-A42B90EFD82B}|EzBuy.csproj|solutionrelative:services\\sqlconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C101924F-06C6-4389-8230-C3BE259824AC}|..\\ezBuy.Extensions\\ezBuy.Extensions.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy.extensions\\enums\\tenanttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9BFBA2D-4583-41CB-B1F4-E4423CB491D7}|..\\ezBuy.Abstractions\\ezBuy.Abstractions.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy.abstractions\\models\\base\\idataentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C101924F-06C6-4389-8230-C3BE259824AC}|..\\ezBuy.Extensions\\ezBuy.Extensions.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy.extensions\\connection\\connectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C101924F-06C6-4389-8230-C3BE259824AC}|..\\ezBuy.Extensions\\ezBuy.Extensions.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy.extensions\\utils\\jsonutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C101924F-06C6-4389-8230-C3BE259824AC}|..\\ezBuy.Extensions\\ezBuy.Extensions.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy.extensions\\validators\\personvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74CF7578-3D59-445D-88C2-6565BCA3A0ED}|..\\ezBuy.DAO.Layer\\ezBuy.DAO.Layer.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy.dao.layer\\basetransactionoperations\\applicationreaddbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74CF7578-3D59-445D-88C2-6565BCA3A0ED}|..\\ezBuy.DAO.Layer\\ezBuy.DAO.Layer.csproj|d:\\ezbuyproject\\ezbuy-project\\ezbuy-project-backend\\ezbuy.dao.layer\\basetransactionoperations\\applicationwritedbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Interfaces\\IApplicationWriteDbConnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Interfaces\\IApplicationWriteDbConnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Interfaces\\IApplicationReadDbConnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Interfaces\\IApplicationReadDbConnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Interfaces\\IApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Interfaces\\IApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20240224064350_Migr1.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Migrations\\20240224064350_Migr1.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240224064350_Migr1.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Migrations\\20240224064350_Migr1.cs",
+              "RelativeToolTip": "Migrations\\20240224064350_Migr1.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T06:45:32.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\Alex\\.nuget\\packages\\mysql.data\\8.3.0\\README.md",
+              "ToolTip": "C:\\Users\\Alex\\.nuget\\packages\\mysql.data\\8.3.0\\README.md",
+              "ViewState": "AQIAAC0AAAAAAAAAAADwv0IAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-02-24T06:26:51.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA1wBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T05:58:09.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TenantMap.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\Mapping\\EntityBuilder\\TenantMap.cs",
+              "RelativeDocumentMoniker": "..\\ezBuy.Abstractions\\Mapping\\EntityBuilder\\TenantMap.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\Mapping\\EntityBuilder\\TenantMap.cs",
+              "RelativeToolTip": "..\\ezBuy.Abstractions\\Mapping\\EntityBuilder\\TenantMap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T05:56:02.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "..\\ezBuy.Controllers\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Controllers\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "..\\ezBuy.Controllers\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T05:54:07.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tenant.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\Models\\Tenant.cs",
+              "RelativeDocumentMoniker": "..\\ezBuy.Abstractions\\Models\\Tenant.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\Models\\Tenant.cs",
+              "RelativeToolTip": "..\\ezBuy.Abstractions\\Models\\Tenant.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T04:50:07.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\AppContext\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "AppContext\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\AppContext\\ApplicationDbContext.cs",
+              "RelativeToolTip": "AppContext\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAuwHMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T03:49:19.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Rule.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\Models\\Rule.cs",
+              "RelativeDocumentMoniker": "..\\ezBuy.Abstractions\\Models\\Rule.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\Models\\Rule.cs",
+              "RelativeToolTip": "..\\ezBuy.Abstractions\\Models\\Rule.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAIA1wBUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T04:57:03.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-18T04:03:37.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAcwBUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T03:05:07.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-18T03:23:50.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EzBuy.csproj",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\EzBuy.csproj",
+              "RelativeDocumentMoniker": "EzBuy.csproj",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\EzBuy.csproj",
+              "RelativeToolTip": "EzBuy.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-02-24T05:59:40.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Group.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\Models\\Group.cs",
+              "RelativeDocumentMoniker": "..\\ezBuy.Abstractions\\Models\\Group.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\Models\\Group.cs",
+              "RelativeToolTip": "..\\ezBuy.Abstractions\\Models\\Group.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAewBUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T04:55:43.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.DAO.Layer\\Interfaces\\IApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\ezBuy.DAO.Layer\\Interfaces\\IApplicationDbContext.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.DAO.Layer\\Interfaces\\IApplicationDbContext.cs",
+              "RelativeToolTip": "..\\ezBuy.DAO.Layer\\Interfaces\\IApplicationDbContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T06:09:49.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Schemas.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\AppContext\\Schemas.cs",
+              "RelativeDocumentMoniker": "AppContext\\Schemas.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\AppContext\\Schemas.cs",
+              "RelativeToolTip": "AppContext\\Schemas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T05:39:07.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FluentValidationService.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\Services\\Validation\\FluentValidationService.cs",
+              "RelativeDocumentMoniker": "..\\ezBuy.Business\\Services\\Validation\\FluentValidationService.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Business\\Services\\Validation\\FluentValidationService.cs",
+              "RelativeToolTip": "..\\ezBuy.Business\\Services\\Validation\\FluentValidationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T00:51:43.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IValidationService.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\Services\\IValidationService.cs",
+              "RelativeDocumentMoniker": "..\\ezBuy.Abstractions\\Services\\IValidationService.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\Services\\IValidationService.cs",
+              "RelativeToolTip": "..\\ezBuy.Abstractions\\Services\\IValidationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T05:24:20.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\Models\\User.cs",
+              "RelativeDocumentMoniker": "..\\ezBuy.Abstractions\\Models\\User.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\Models\\User.cs",
+              "RelativeToolTip": "..\\ezBuy.Abstractions\\Models\\User.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBAAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T04:50:15.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ConnectionExtension.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Extensions\\Connection\\ConnectionExtension.cs",
+              "RelativeDocumentMoniker": "..\\ezBuy.Extensions\\Connection\\ConnectionExtension.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Extensions\\Connection\\ConnectionExtension.cs",
+              "RelativeToolTip": "..\\ezBuy.Extensions\\Connection\\ConnectionExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T04:46:56.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "JsonUtils.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Extensions\\Utils\\JsonUtils.cs",
+              "RelativeDocumentMoniker": "..\\ezBuy.Extensions\\Utils\\JsonUtils.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Extensions\\Utils\\JsonUtils.cs",
+              "RelativeToolTip": "..\\ezBuy.Extensions\\Utils\\JsonUtils.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T04:43:23.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SqlConnectionFactory.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Services\\SqlConnectionFactory.cs",
+              "RelativeDocumentMoniker": "Services\\SqlConnectionFactory.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Services\\SqlConnectionFactory.cs",
+              "RelativeToolTip": "Services\\SqlConnectionFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T03:33:58.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IDataEntity.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\Models\\Base\\IDataEntity.cs",
+              "RelativeDocumentMoniker": "..\\ezBuy.Abstractions\\Models\\Base\\IDataEntity.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Abstractions\\Models\\Base\\IDataEntity.cs",
+              "RelativeToolTip": "..\\ezBuy.Abstractions\\Models\\Base\\IDataEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T04:49:04.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TenantType.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Extensions\\Enums\\TenantType.cs",
+              "RelativeDocumentMoniker": "..\\ezBuy.Extensions\\Enums\\TenantType.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Extensions\\Enums\\TenantType.cs",
+              "RelativeToolTip": "..\\ezBuy.Extensions\\Enums\\TenantType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T04:51:31.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PersonValidators.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Extensions\\Validators\\PersonValidators.cs",
+              "RelativeDocumentMoniker": "..\\ezBuy.Extensions\\Validators\\PersonValidators.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.Extensions\\Validators\\PersonValidators.cs",
+              "RelativeToolTip": "..\\ezBuy.Extensions\\Validators\\PersonValidators.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAgwHkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T04:42:40.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IApplicationReadDbConnection.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Interfaces\\IApplicationReadDbConnection.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IApplicationReadDbConnection.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Interfaces\\IApplicationReadDbConnection.cs",
+              "RelativeToolTip": "Interfaces\\IApplicationReadDbConnection.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T04:28:50.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IApplicationWriteDbConnection.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Interfaces\\IApplicationWriteDbConnection.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IApplicationWriteDbConnection.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Interfaces\\IApplicationWriteDbConnection.cs",
+              "RelativeToolTip": "Interfaces\\IApplicationWriteDbConnection.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T04:28:50.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Interfaces\\IApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IApplicationDbContext.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\Interfaces\\IApplicationDbContext.cs",
+              "RelativeToolTip": "Interfaces\\IApplicationDbContext.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T04:28:50.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ApplicationWriteDbConnection.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.DAO.Layer\\BaseTransactionOperations\\ApplicationWriteDbConnection.cs",
+              "RelativeDocumentMoniker": "..\\ezBuy.DAO.Layer\\BaseTransactionOperations\\ApplicationWriteDbConnection.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.DAO.Layer\\BaseTransactionOperations\\ApplicationWriteDbConnection.cs",
+              "RelativeToolTip": "..\\ezBuy.DAO.Layer\\BaseTransactionOperations\\ApplicationWriteDbConnection.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA3wBAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T04:01:42.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ApplicationReadDbConnection.cs",
+              "DocumentMoniker": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.DAO.Layer\\BaseTransactionOperations\\ApplicationReadDbConnection.cs",
+              "RelativeDocumentMoniker": "..\\ezBuy.DAO.Layer\\BaseTransactionOperations\\ApplicationReadDbConnection.cs",
+              "ToolTip": "D:\\ezBuyProject\\ezbuy-project\\ezbuy-project-backend\\ezBuy.DAO.Layer\\BaseTransactionOperations\\ApplicationReadDbConnection.cs",
+              "RelativeToolTip": "..\\ezBuy.DAO.Layer\\BaseTransactionOperations\\ApplicationReadDbConnection.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAuwCIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T03:53:47.264Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

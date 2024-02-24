@@ -7,6 +7,8 @@ using EzBuy.Services;
 using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.SwaggerUI;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Localization;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
  
@@ -14,10 +16,19 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
  
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options
-        .UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
-);
+{
+    options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.EnableSensitiveDataLogging();
+});
 
+builder.Services.Configure<RequestLocalizationOptions>(options =>
+{
+    options.DefaultRequestCulture = new RequestCulture("en-US");
+    options.SupportedCultures = new List<CultureInfo> { new CultureInfo("en-US") };
+    options.SupportedUICultures = new List<CultureInfo> { new CultureInfo("en-US") };
+
+});
+ 
 builder.Services.AddScoped<IApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>());
 builder.Services.AddScoped<IApplicationWriteDbConnection, ApplicationWriteDbConnection>();
 builder.Services.AddScoped<IApplicationReadDbConnection, ApplicationReadDbConnection>();

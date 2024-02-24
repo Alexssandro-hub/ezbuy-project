@@ -9,12 +9,12 @@ public class User : IDataEntity
 {
     [Key]
     public int Id { get; set; }
-    public static string Name { get; set; } = string.Empty;
-    public static string LastName { get; set; } = string.Empty;
-    public string FullName { get; set; } = Name + " " + LastName;
-    public string Email { get; set; }
-    public string Password { get; set; }
-    public string UserName { get; set; }
+    public  string Name { get; set; } = string.Empty;
+    public string LastName { get; set; } = string.Empty;
+    public string FullName { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
+    public string Password { get; set; } = string.Empty;
+    public string UserName { get; set; } = string.Empty;
     public Tenant Tenant { get; set; }
     public int TenantId { get; set; }
     public Group Group { get; set; }

@@ -22,6 +22,7 @@
           "MySql.EntityFrameworkCore": "8.0.0",
           "Swashbuckle.AspNetCore": "6.5.0",
           "System.Data.SqlClient": "4.8.6",
+          "ezBuy.Controllers.Layer": "1.0.0",
           "ezBuy.DAO.Layer": "1.0.0"
         },
         "runtime": {
@@ -1210,10 +1211,31 @@
           "FluentValidation": "11.9.0",
           "FluentValidation.AspNetCore": "11.3.0",
           "FluentValidation.DependencyInjectionExtensions": "11.9.0",
+          "Microsoft.EntityFrameworkCore": "8.0.2",
           "ezBuy.Extensions": "1.0.0"
         },
         "runtime": {
           "ezBuy.Abstractions.dll": {}
+        }
+      },
+      "ezBuy.Business.Layer/1.0.0": {
+        "dependencies": {
+          "ezBuy.Abstractions": "1.0.0",
+          "ezBuy.DAO.Layer": "1.0.0",
+          "ezBuy.Extensions": "1.0.0"
+        },
+        "runtime": {
+          "ezBuy.Business.Layer.dll": {}
+        }
+      },
+      "ezBuy.Controllers.Layer/1.0.0": {
+        "dependencies": {
+          "ezBuy.Abstractions": "1.0.0",
+          "ezBuy.Business.Layer": "1.0.0",
+          "ezBuy.Extensions": "1.0.0"
+        },
+        "runtime": {
+          "ezBuy.Controllers.Layer.dll": {}
         }
       },
       "ezBuy.DAO.Layer/1.0.0": {
@@ -2011,6 +2033,16 @@
       "hashPath": "zstdsharp.port.0.7.1.nupkg.sha512"
     },
     "ezBuy.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ezBuy.Business.Layer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ezBuy.Controllers.Layer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

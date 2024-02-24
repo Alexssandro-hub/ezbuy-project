@@ -2,6 +2,6 @@
 {
     public class Schemas
     {
-        public static string RootSchema { get; set; } = "root_schema";
+        public const string RootSchema = "root_schema";
     }
 }

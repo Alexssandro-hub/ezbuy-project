@@ -14,7 +14,7 @@ namespace ezBuy.Abstractions.Models
     {
         [Key]
         public int Id { get; set; }
-        public string Responsibility { get; set; }
+        public string Responsibility { get; set; } = string.Empty;
         public User User { get; set; }
         public int UserId { get; set; }
         public Tenant Tenant { get; set; }
