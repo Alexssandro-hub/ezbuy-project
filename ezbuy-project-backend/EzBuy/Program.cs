@@ -9,6 +9,13 @@ using Swashbuckle.AspNetCore.SwaggerUI;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Localization;
 using System.Globalization;
+using ezBuy.Business.Layer.Services;
+using ezBuy.Business.Services.Validation;
+using ezBuy.Business.Layer.Services.Custom;
+using ezBuy.DAO.Layer;
+using ezBuy.DAO.Layer.Interfaces;
+using ezBuy.DAO.Layer.EFCore;
+using EzBuy.Models;
 
 var builder = WebApplication.CreateBuilder(args);
  
@@ -24,14 +31,18 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.Configure<RequestLocalizationOptions>(options =>
 {
     options.DefaultRequestCulture = new RequestCulture("en-US");
-    options.SupportedCultures = new List<CultureInfo> { new CultureInfo("en-US") };
-    options.SupportedUICultures = new List<CultureInfo> { new CultureInfo("en-US") };
+    options.SupportedCultures = new List<CultureInfo> { new("en-US") };
+    options.SupportedUICultures = new List<CultureInfo> { new("en-US") };
 
 });
  
 builder.Services.AddScoped<IApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>());
 builder.Services.AddScoped<IApplicationWriteDbConnection, ApplicationWriteDbConnection>();
-builder.Services.AddScoped<IApplicationReadDbConnection, ApplicationReadDbConnection>();
+builder.Services.AddScoped<IApplicationReadDbConnection, ApplicationReadDbConnection>(); 
+builder.Services.AddScoped(typeof(FluentValidationService));
+builder.Services.AddScoped(typeof(LoginService));
+builder.Services.AddScoped(typeof(EncryptPassService));
+//builder.Services.AddScoped(typeof(UserRepository));
 
 builder.Services.AddSwaggerGen(c =>
 {

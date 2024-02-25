@@ -15,7 +15,6 @@
   <ItemGroup>
     <Folder Include="Services\Aggregates\" />
     <Folder Include="Services\Base\" />
-    <Folder Include="Services\Custom\" />
     <Folder Include="Services\Validation\" />
   </ItemGroup>
 

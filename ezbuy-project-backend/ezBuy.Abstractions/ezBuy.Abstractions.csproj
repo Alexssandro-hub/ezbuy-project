@@ -7,7 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DTOs\Requests\s\**" />
+    <EmbeddedResource Remove="DTOs\Requests\s\**" />
+    <None Remove="DTOs\Requests\s\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs\Results\" />
+    <Folder Include="DTOs\Responses\" />
     <Folder Include="ModelBuilders\" />
+    <Folder Include="Models\Base\BaseController\" />
     <Folder Include="Providers\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
