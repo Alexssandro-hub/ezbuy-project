@@ -1,5 +1,4 @@
-﻿using ezBuy.Abstractions.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EzBuy.Models;
@@ -15,10 +14,5 @@ public class User : IDataEntity
     public string Email { get; set; } = string.Empty;
     public string Password { get; set; } = string.Empty;
     public string UserName { get; set; } = string.Empty;
-    public Tenant Tenant { get; set; }
-    public int TenantId { get; set; }
-    public Group Group { get; set; }
-    public int GroupId { get; set; }
-    public Rule Rule { get; set; }
-    public int RuleId { get; set; }
+    public bool IsActive { get; set; } 
 }

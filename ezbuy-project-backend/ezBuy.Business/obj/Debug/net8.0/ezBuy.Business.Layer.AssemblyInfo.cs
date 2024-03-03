@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ezBuy.Business.Layer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe3d036cad9fa62bb150ef12c8d9883a686de1a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37832f717bed690c3cfae95b354d7e2a62e39196")]
 [assembly: System.Reflection.AssemblyProductAttribute("ezBuy.Business.Layer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ezBuy.Business.Layer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

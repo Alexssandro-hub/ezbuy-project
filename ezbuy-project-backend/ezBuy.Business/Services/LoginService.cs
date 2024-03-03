@@ -15,19 +15,19 @@ namespace ezBuy.Business.Layer.Services
 {
     public class LoginService : ILoginService<LoginRequest, User>
     {
-        //private readonly UserRepository _userRepository;
         private readonly FluentValidationService _validationService;
         private readonly EncryptPassService _encryptPassService;
 
+        public List<string> Errors { get; set; }
+
         public LoginService(
-            //UserRepository userRepository,
             FluentValidationService validationService,
             EncryptPassService encryptPassService)
         {
-            //_userRepository = userRepository;
             _validationService = validationService;
             _encryptPassService = encryptPassService;
         }
+
         public async Task<User> Register(UserRegisterRequest userRegister)
         {
             var user = new User
@@ -38,11 +38,12 @@ namespace ezBuy.Business.Layer.Services
                 FullName = userRegister.FullName,
                 Email = userRegister.Email,
                 Password = _encryptPassService.Encrypt(userRegister.Password),
-                UserName = userRegister.UserName,
-                TenantId = 1,
-                GroupId = 1,
-                RuleId = 1,
+                UserName = userRegister.UserName, 
             };
+
+            Errors = Validate(user); 
+            if (Errors.Count > 0) return null;
+
             return null;
             //return await _userRepository.Add(user);
         }
@@ -63,8 +64,6 @@ namespace ezBuy.Business.Layer.Services
 
         private void ValidateRequiredFields(User entity, List<string> errorList)
         {
-            static string SetMessage(string fieldName) => $"Campo '{fieldName}' é obrigatório.";
-
             if (string.IsNullOrWhiteSpace(entity.Name)) errorList.Add(SetMessage("Nome"));
             if (string.IsNullOrWhiteSpace(entity.LastName)) errorList.Add(SetMessage("Sobrenome"));
             if (string.IsNullOrWhiteSpace(entity.FullName)) errorList.Add("Nome completo");
@@ -72,7 +71,9 @@ namespace ezBuy.Business.Layer.Services
             if (string.IsNullOrWhiteSpace(entity.Password)) errorList.Add("Senha");
             if (string.IsNullOrEmpty(entity.UserName)) errorList.Add("Nome de usuário");
               
-            errorList.AddRange(_validationService.Validate<User>(entity));
+            errorList.AddRange(_validationService.Validate<User>(entity));   
         }
+
+        private static string SetMessage(string fieldName) => $"Campo '{fieldName}' é obrigatório.";
     }
 }

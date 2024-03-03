@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EzBuy-v3\EzBuy-v3.csproj" />
+    <ProjectReference Include="..\EzDomain\EzDomain.csproj" />
+    <ProjectReference Include="..\EzRepository\EzRepository.csproj" /> 
+  </ItemGroup>
+
+</Project>

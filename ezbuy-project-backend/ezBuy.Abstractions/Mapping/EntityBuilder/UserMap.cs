@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using ezBuy.Abstractions.Models;
+using System.Threading.Tasks; 
 using EzBuy.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -34,15 +33,7 @@ namespace ezBuy.Abstractions.Mapping.EntityBuilder
             builder.Property(x => x.FullName)
                     .HasMaxLength(100)
                     .IsRequired();
-
-            builder.Property(x => x.GroupId)
-                    .IsRequired();
-
-            builder.Property(x => x.RuleId)
-                    .IsRequired();  
-
-            builder.Property(x => x.TenantId)
-                    .IsRequired();
+             
 
             builder.Property(x => x.Name)
                     .HasMaxLength(50)

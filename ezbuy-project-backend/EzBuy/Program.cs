@@ -1,19 +1,19 @@
 using System.Configuration;
-using EzBuy.AppContext;
-using ezBuy.DAO.Layer.BaseTransactionOperations;
-using ezBuy.DAO.Layer.EntityFrameworkConnection;
-using EzBuy.Interfaces;
-using EzBuy.Services;
+using EzBuy.AppContext; 
+using EzBuy.Interfaces; 
 using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.SwaggerUI;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Localization;
 using System.Globalization;
+using System.Text;
 using ezBuy.Business.Layer.Services;
 using ezBuy.Business.Services.Validation;
-using ezBuy.Business.Layer.Services.Custom;
-using ezBuy.DAO.Layer;
-using ezBuy.DAO.Layer.Interfaces;
+using ezBuy.Business.Layer.Services.Custom; 
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using ezBuy.Business.Layer.Services.Interfaces;
+using ezBuy.DAO.Layer.Repositories.UserRepository;
 using ezBuy.DAO.Layer.EFCore;
 using EzBuy.Models;
 
@@ -27,6 +27,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection"));
     options.EnableSensitiveDataLogging();
 });
+ 
 
 builder.Services.Configure<RequestLocalizationOptions>(options =>
 {
@@ -35,15 +36,31 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
     options.SupportedUICultures = new List<CultureInfo> { new("en-US") };
 
 });
+
  
-builder.Services.AddScoped<IApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>());
-builder.Services.AddScoped<IApplicationWriteDbConnection, ApplicationWriteDbConnection>();
-builder.Services.AddScoped<IApplicationReadDbConnection, ApplicationReadDbConnection>(); 
+builder.Services.AddScoped<IApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>()); 
 builder.Services.AddScoped(typeof(FluentValidationService));
 builder.Services.AddScoped(typeof(LoginService));
-builder.Services.AddScoped(typeof(EncryptPassService));
-//builder.Services.AddScoped(typeof(UserRepository));
+builder.Services.AddScoped(typeof(EncryptPassService)); 
+builder.Services.AddScoped<UserRepository<User>>();
 
+builder.Services.AddControllers();
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = false;
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters()
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+    };
+});
+
+builder.Services.AddEndpointsApiExplorer();  
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v0", new OpenApiInfo
@@ -72,13 +89,11 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
-
-builder.Services.AddControllers();
-
+  
 var app = builder.Build();
  
 if (app.Environment.IsDevelopment())
-{
+{ 
     app.UseSwagger();
     app.UseSwaggerUI(x =>
         {
@@ -92,11 +107,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseRouting();
 
-app.UseCors();
+
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.MapControllers();
 app.Run();
  
