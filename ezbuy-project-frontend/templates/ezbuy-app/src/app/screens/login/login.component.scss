@@ -1,0 +1,73 @@
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px; /* Espaçamento entre grupos de formulários */
+}
+
+form {
+  border: 1px solid #ccc;
+  padding: 100px;
+  box-shadow: 0 0 5px #3f51b5;
+}
+
+
+input {
+  width: 100%;
+  max-width: 400px; /* Largura máxima desejada */
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+.button-group button {
+  font-size: 14px; /* Tamanho da fonte do botão */
+  transition: background-color 0.3s; /* Transição suave da cor de fundo */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border: none; /* Remover a borda padrão do botão */
+  border-radius: 4px; /* Borda arredondada */
+  cursor: pointer; /* Mostrar cursor de apontar */
+  margin: 0;
+}
+
+.button-group button:not(:last-child) {
+  margin-right: 10px; /* Espaçamento entre os botões */
+}
+
