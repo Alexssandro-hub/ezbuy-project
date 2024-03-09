@@ -49,11 +49,15 @@ export class LoginComponent {
   }
 
   onLogin(){
-    this.toastrService.success('Login realizado com sucesso!', 'Sucesso!');
-    // this.authService.login(this.form.value.username, this.form.value.password).subscribe({
-    //   next: (response) => {
-    //   },
-    // });
+    this.authService.login(this.form.value.username, this.form.value.password).subscribe(
+      (response) => {
+        if (response){
+          this.toastrService.success('Login realizado com sucesso!', 'Sucesso!');
+        }else {
+          this.toastrService.error('Falha na tentativa de login!', 'Error!');
+        }
+      },
+    );
   }
 
   register(){

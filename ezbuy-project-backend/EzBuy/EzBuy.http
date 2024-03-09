@@ -1,6 +1,0 @@
-@EzBuy_HostAddress = http://localhost:5146
-
-GET {{EzBuy_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
