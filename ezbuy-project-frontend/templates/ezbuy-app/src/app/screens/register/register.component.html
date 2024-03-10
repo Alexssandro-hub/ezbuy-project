@@ -1,0 +1,37 @@
+<div class="container">
+  <form class="login-form" [formGroup]="form" (ngSubmit)="register()">
+    <div class="form-group" fxLayout="column" fxLayoutAlign="center">
+      <mat-form-field>
+        <mat-label required>Username</mat-label>
+        <input matInput formControlName="username" type="username" required>
+      </mat-form-field>
+    </div>
+    <div class="form-group" fxLayout="column" fxLayoutAlign="center">
+      <mat-form-field>
+        <mat-label  required>Senha</mat-label>
+        <input matInput formControlName="password" type="password" required>
+      </mat-form-field>
+    </div>
+    <div class="form-group" fxLayout="column" fxLayoutAlign="center">
+      <mat-form-field>
+        <mat-label required>Email</mat-label>
+        <input matInput formControlName="email" type="email" required>
+      </mat-form-field>
+    </div>
+    <div class="form-group" fxLayout="column" fxLayoutAlign="center">
+      <mat-form-field>
+        <mat-label required>First Name</mat-label>
+        <input matInput formControlName="firstName" type="firstName" required>
+      </mat-form-field>
+    </div>
+    <div class="form-group" fxLayout="column" fxLayoutAlign="center">
+      <mat-form-field>
+        <mat-label required>Last Name</mat-label>
+        <input matInput formControlName="lastName" type="lastName" required>
+      </mat-form-field>
+    </div>
+    <div class="button-group">
+      <button type="button" mat-raised-button color="accent" matTooltip="Entrar no sistema" [disabled]="!form.valid" (click)="register()">Cadastrar</button>
+    </div>
+  </form>
+</div>

@@ -1,3 +1,4 @@
+import { RegisterComponent } from './screens/register/register.component';
 import { Routes } from '@angular/router';
 import { HomeComponent } from './screens/home/home.component';
 import { LoginComponent } from './screens/login/login.component';
@@ -9,6 +10,12 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./screens/login/login.component').then(m => m.LoginComponent),
     title: 'Login',
+  },
+  {
+    path: 'register',
+    loadComponent: () =>
+      import('./screens/register/register.component').then(m => m.RegisterComponent),
+    title: 'Register',
   },
   {
     path: 'home',
