@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ezbuy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffa1897dd9e52cfde34ef36aeab11858b92ae52c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee9aae18a560bf0ec2207025bc7dacb791a7d45b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ezbuy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ezbuy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

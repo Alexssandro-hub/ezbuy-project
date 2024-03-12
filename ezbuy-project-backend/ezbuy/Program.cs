@@ -1,4 +1,5 @@
 using ezbuy.Data;
+using ezbuy.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -11,6 +12,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddSingleton(typeof(EncryptPassService));
+builder.Services.AddSingleton(typeof(FluentValidationService));
+
 builder.Services.AddSwaggerGen(
     //opts =>
     //{

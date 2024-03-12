@@ -58,6 +58,7 @@ export class LoginComponent {
       (response) => {
         if (response){
           this.toastrService.success('Login realizado com sucesso!', 'Sucesso!');
+          this.router.navigate(['/home']);
         }else {
           this.toastrService.error('Falha na tentativa de login!', 'Error!');
         }

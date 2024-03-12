@@ -1,6 +1,7 @@
 ﻿using ezbuy.Data;
 using ezbuy.Models;
 using ezbuy.Models.DTOs.Request;
+using ezbuy.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,7 +9,7 @@ namespace ezbuy.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController(DataContext context) : ControllerBase
+    public class UserController(DataContext context, EncryptPassService encryptPassService) : ControllerBase
     {
         [HttpGet]
         public async Task<IActionResult> GetAllUsers()
@@ -22,12 +23,17 @@ namespace ezbuy.Controllers
 
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginRequest login)
-        {
-            var user = await context.Users.FirstOrDefaultAsync(u => u.Email == login.Email && u.Password.Equals(login.Password));
+        { 
+            var user = await context.Users.FirstOrDefaultAsync(
+                u => u.Email.ToUpper().Equals(login.Email.ToUpper()));
 
-            if (user is not null) return Ok(user);
-
-            return BadRequest("Usuário não cadastrado!");
+            if (user is not null &&
+                encryptPassService.VerifyPassword(login.Password, user.Password))
+            {
+                return Ok(user);
+            }
+             
+            return BadRequest("Usuário não cadastrado/encontrado!");
         }
 
         [HttpPost("register")]
@@ -41,10 +47,11 @@ namespace ezbuy.Controllers
                 var user = new User
                 {
                     Id = 0,
+                    Login = userRequest.Login,
                     FirstName = userRequest.FirstName,
                     LastName = userRequest.LastName,
                     Email = userRequest.Email,
-                    Password = userRequest.Password,
+                    Password = encryptPassService.Encrypt(userRequest.Password),
                 };
 
                 await context.Users.AddAsync(user);
@@ -53,6 +60,48 @@ namespace ezbuy.Controllers
             }
             catch (Exception ex)
             { 
+                return BadRequest(ex);
+            }
+        }
+
+        [HttpPut("edit")]
+        public async Task<IActionResult> UpdateUser(UserRequest userRequest)
+        { 
+            try
+            {
+                var user = await context.Users.Where(x => x.Id.Equals(userRequest.Id)).FirstOrDefaultAsync();
+
+                if (user is null) return BadRequest("Usuário inexistente!");
+
+                user.FirstName = userRequest.FirstName;
+                user.LastName = userRequest.LastName;
+                user.Email = userRequest.Email;
+                user.Password = encryptPassService.Encrypt(userRequest.Password);
+                 
+                await context.SaveChangesAsync();
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            try
+            {
+                var user = await context.Users.Where(x => x.Id.Equals(id)).FirstOrDefaultAsync();
+
+                if (user is null) return BadRequest("Usuário não encontrado!");
+
+                context.Users.Remove(user);
+                await context.SaveChangesAsync();
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
                 return BadRequest(ex);
             }
         }

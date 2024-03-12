@@ -27,6 +27,22 @@
   },
   {
     "ContainingType": "ezbuy.Controllers.UserController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/User/edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userRequest",
+        "Type": "ezbuy.Models.DTOs.Request.UserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ezbuy.Controllers.UserController",
     "Method": "Login",
     "RelativePath": "api/User/login",
     "HttpMethod": "POST",

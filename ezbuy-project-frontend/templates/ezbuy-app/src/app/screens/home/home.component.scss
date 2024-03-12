@@ -1,2 +1,82 @@
 
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.toggle-button {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  $size: 25px;
+  width: $size;
+  height: $size;
+  margin: 0;
+  padding: 0;
+
+  position: absolute;
+  top: 48px;
+  right: calc($size / -2) - 2px;
+
+  border: 1px solid gray;
+  border-radius: 50%;
+
+  background-color: white;
+
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid rgb(36, 82, 231);
+  }
+
+  &.is-flipped {
+    transform: rotate(-180deg);
+  }
+
+  mat-icon {
+    font-size: 1.5em;
+
+    width: fit-content;
+    height: fit-content;
+  }
+
+  border: 1px solid gray;
+  border-radius: 50%;
+
+  background-color: white;
+
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid rgb(36, 82, 231);
+  }
+
+  &.is-flipped {
+    transform: rotate(-180deg);
+  }
+
+  mat-icon {
+    font-size: 1.5em;
+
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
+:root {
+  --sidenav-width: 300px;  // <- already exists
+  --sidenav-collapsed-width: 20px;  // <- we define a new one
+}
+
+:host {
+  height: 100vh;
+  width: var(--sidenav-width);
+
+  &.is-expanded {
+    width: var(--sidenav-width);
+  }
+
+  // rest of styles ...
+}
 

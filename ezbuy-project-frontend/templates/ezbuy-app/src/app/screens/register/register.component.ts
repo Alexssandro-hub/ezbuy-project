@@ -53,17 +53,18 @@ export class RegisterComponent {
 
   register(){
     this.authService.register({
-      UserName: this.form.value.username,
-      FirstName: this.form.value.fileURLToPathirstName,
+      Login: this.form.value.username,
+      FirstName: this.form.value.firstName,
       LastName: this.form.value.lastName,
       Email: this.form.value.email,
       Password: this.form.value.password
     }).subscribe(
       (response) => {
         if (response){
-          this.toastrService.success('Login realizado com sucesso!', 'Sucesso!');
+          this.toastrService.success('Cadastro realizado com sucesso!', 'Sucesso!');
+          this.router.navigate(['/login']);
         }else {
-          this.toastrService.error('Falha na tentativa de login!', 'Error!');
+          this.toastrService.error('Falha na tentativa de cadastro!', 'Error!');
         }
       },
       (error) => {
