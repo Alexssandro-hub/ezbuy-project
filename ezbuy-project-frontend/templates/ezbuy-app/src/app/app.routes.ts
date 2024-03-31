@@ -22,5 +22,15 @@ export const routes: Routes = [
     loadComponent: () => import('./screens/home/home.component').then(m => m.HomeComponent),
     title: 'Home',
   },
+  {
+    path: 'product',
+    loadComponent: () => import('./screens/product/product.component').then(m => m.ProductComponent),
+    title: 'Produto',
+  },
+  {
+    path: 'product/create-or-edit',
+    loadComponent: () => import('./screens/product/create/create.component').then(m => m.CreateComponent),
+    title: 'Criar/Editar Produto',
+  },
 ];
 

@@ -1,0 +1,113 @@
+.main-content {
+  margin-left: 250px; /* ajuste conforme a largura do seu sidebar */
+  padding: 20px;
+}
+
+.inputs-container {
+  width: 100%;
+  max-width: 400px; /* ajuste conforme necessário */
+  margin: 0 auto; /* centraliza horizontalmente */
+}
+
+.custom-input {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.custom-input input,
+.custom-input select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+.custom-input input:focus,
+.custom-input select:focus {
+  border-color: dodgerblue;
+}
+
+/* Personalizando o placeholder do input */
+.custom-input input::placeholder {
+  color: #999;
+}
+
+/* Personalizando o estilo do select */
+.custom-input select {
+  appearance: none;
+  /* Adicione imagens de seta personalizadas aqui se desejar */
+  background-image: url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 10px);
+  background-position-y: center;
+  padding-right: 30px; /* Ajuste conforme necessário para acomodar a imagem da seta */
+}
+
+.action-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: #0069d9;
+}
+
+.products-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.products-table th, .products-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.products-table th {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+.products-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.products-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.products-header h2 {
+  color: #333;
+}
+
+.back-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #0069d9;
+}

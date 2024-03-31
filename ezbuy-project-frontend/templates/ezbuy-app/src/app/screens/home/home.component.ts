@@ -25,7 +25,7 @@ import { NavService } from '../../services/nav.service';
         MatSidenavModule,
         MatListModule,
         MatMenuModule,
-        MatDialogModule
+        MatDialogModule,
     ]
 })
 export class HomeComponent {
@@ -37,5 +37,7 @@ export class HomeComponent {
     private sidenavService: NavService){
       this.expanded = sidenavService.isExpanded;
     }
+
+
 
 }

@@ -58,6 +58,8 @@ export class LoginComponent {
       (response) => {
         if (response){
           this.toastrService.success('Login realizado com sucesso!', 'Sucesso!');
+          localStorage.setItem('token-ezbuy', response.token);
+          localStorage.setItem('user-ezbuy', JSON.stringify(response));
           this.router.navigate(['/home']);
         }else {
           this.toastrService.error('Falha na tentativa de login!', 'Error!');

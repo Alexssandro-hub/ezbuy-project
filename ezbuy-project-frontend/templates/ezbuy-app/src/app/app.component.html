@@ -1,1 +1,12 @@
-<router-outlet />
+
+<div *ngIf="showSidebar" class="sidebar">
+  <ul>
+    <li><a (click)="goToProduct()">Produto</a></li>
+    <!-- <li><a (click)="goToProfile()">Perfil</a></li> -->
+    <!-- Adicione outros links conforme necessário -->
+  </ul>
+</div>
+<div class="main-content">
+  <router-outlet />
+</div>
+
