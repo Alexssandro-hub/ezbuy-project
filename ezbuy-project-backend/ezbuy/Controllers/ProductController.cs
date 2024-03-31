@@ -13,13 +13,13 @@ namespace ezbuy.Controllers
     public class ProductController : ControllerBase
     {
         private readonly DataContext _context;
-        private readonly IHttpContextAccessor _httpContextAccessor;
+        //private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly TokenService _tokenService;
-        public ProductController(DataContext context, IHttpContextAccessor httpContextAccessor,
+        public ProductController(DataContext context,
             TokenService tokenService, ILogger<ProductController> logger)
         {
             _context = context;
-            _httpContextAccessor = httpContextAccessor;
+            //_httpContextAccessor = httpContextAccessor;
             _tokenService = tokenService;
         }
 
@@ -111,19 +111,19 @@ namespace ezbuy.Controllers
 
         private int GetUserId()
         {
-            var httpContext = _httpContextAccessor.HttpContext;
+            //var httpContext = _httpContextAccessor.HttpContext;
 
-            if (httpContext != null)
-            {
-                var user = httpContext.User;
+            //if (httpContext != null)
+            //{
+            //    var user = httpContext.User;
 
-                if (user != null)
-                { 
-                    string userId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            //    if (user != null)
+            //    { 
+            //        string userId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-                    return Convert.ToInt32(userId);
-                }
-            }
+            //        return Convert.ToInt32(userId);
+            //    }
+            //}
 
             return 0;
         }
