@@ -92,7 +92,7 @@
 }
 
 .products-header h2 {
-  color: #333;
+  color: #24124d;
 }
 
 .back-button {
@@ -110,4 +110,16 @@
 
 .back-button:hover {
   background-color: #0069d9;
+}
+
+.save-button {
+  background-color: #148f3d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.save-button:hover {
+  background-color: #148f3d;
 }

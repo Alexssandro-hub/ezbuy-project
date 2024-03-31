@@ -51,22 +51,40 @@ export class CreateComponent implements OnInit {
     }
   }
 
-  load(){
-
-  }
-
   save(){
+    var product = this.getProduct();
+
     if (this.isEdit) {
-      // update
+      this.productService.edit(product)
+      .subscribe((reponse) => {
+        if (reponse){
+          this.toastrService.success('Entidade atualizada com sucesso!', 'Sucesso!');
+        }else{
+          this.toastrService.error('Falha na tentativa de atualizar entidade!', 'Error!');
+        }
+      });
     } else {
-      // create
+      this.productService.save(product)
+      .subscribe((reponse) => {
+        if (reponse){
+          this.toastrService.success('Entidade cadastrada com sucesso!', 'Sucesso!');
+        }else{
+          this.toastrService.error('Falha na tentativa de cadastrar entidade!', 'Error!');
+        }
+      });
     }
 
     this.back();
   }
 
-  delete(){
-    //this.toastrService.warning('Produto deletado com sucesso!', 'Deletar Produto');
+  getProduct(): any {
+    return {
+      id: this.form.value.id | 0,
+      name: this.form.value.name,
+      description: this.form.value.description,
+      price: this.form.value.price,
+      category: this.form.value.category
+    }
   }
 
   back(){

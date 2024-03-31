@@ -1,5 +1,5 @@
 
-<button class="action-button" (click)="createOrEditProduct()">Criar ou Editar</button>
+<button class="action-button" (click)="createOrEditProduct()">Criar</button>
 
 <div class="products-header">
   <h2>Listagem de Produtos</h2>
@@ -18,8 +18,9 @@
     </thead>
     <tbody>
       <tr *ngFor="let product of products">
-        <td (click)="editProduct(product)">
-          <i class="fas fa-edit"></i>
+        <td >
+          <div><i class="fas fa-edit" (click)="editProduct(product)"></i></div>
+          <div><i class="fas fa-trash" (click)="delete(product)"></i></div>
         </td>
         <td>{{ product.name }}</td>
         <td>{{ product.description }}</td>
