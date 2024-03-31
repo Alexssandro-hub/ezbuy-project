@@ -9,8 +9,8 @@ namespace ezbuy.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController(DataContext context, EncryptPassService encryptPassService) : ControllerBase
-    {
+    public class UserController(DataContext context, EncryptPassService encryptPassService, TokenService tokenService, ILogger<UserController> logger) : ControllerBase
+    { 
         [HttpGet]
         public async Task<IActionResult> GetAllUsers()
             => 
@@ -30,7 +30,16 @@ namespace ezbuy.Controllers
             if (user is not null &&
                 encryptPassService.VerifyPassword(login.Password, user.Password))
             {
-                return Ok(user);
+                var accessToken = tokenService.CreateToken(user);
+                await context.SaveChangesAsync();
+
+                return Ok(new
+                {
+                    UserId = user.Id,
+                    Username = user.FirstName,
+                    Email = user.Email,
+                    Token = accessToken
+                });
             }
              
             return BadRequest("Usuário não cadastrado/encontrado!");

@@ -1,4 +1,6 @@
-﻿namespace ezbuy.Models
+﻿using ezbuy.Models.Enums;
+
+namespace ezbuy.Models
 {
     public class User
     {
@@ -12,5 +14,6 @@
         public string FirstName { get; set; } = string.Empty;
 
         public string LastName { get; set; } = string.Empty;
+        public Role Role { get; set; }
     }
 }

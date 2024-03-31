@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ezBuy_v2\\ezbuy-project\\ezbuy-project-backend\\ezbuy\\ezbuy.csproj": {}
+    "D:\\ezBuy_v2\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\ezbuy.csproj": {}
   },
   "projects": {
-    "D:\\ezBuy_v2\\ezbuy-project\\ezbuy-project-backend\\ezbuy\\ezbuy.csproj": {
+    "D:\\ezBuy_v2\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\ezbuy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ezBuy_v2\\ezbuy-project\\ezbuy-project-backend\\ezbuy\\ezbuy.csproj",
+        "projectUniqueName": "D:\\ezBuy_v2\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\ezbuy.csproj",
         "projectName": "ezbuy",
-        "projectPath": "D:\\ezBuy_v2\\ezbuy-project\\ezbuy-project-backend\\ezbuy\\ezbuy.csproj",
+        "projectPath": "D:\\ezBuy_v2\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\ezbuy.csproj",
         "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-        "outputPath": "D:\\ezBuy_v2\\ezbuy-project\\ezbuy-project-backend\\ezbuy\\obj\\",
+        "outputPath": "D:\\ezBuy_v2\\ezbuy-project\\ezbuy-project-backend\\EzBuy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Asp.Versioning.Mvc": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.9.0, )"
@@ -52,6 +56,10 @@
             "FluentValidation.WebAPI": {
               "target": "Package",
               "version": "[8.6.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -84,6 +92,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[7.5.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
