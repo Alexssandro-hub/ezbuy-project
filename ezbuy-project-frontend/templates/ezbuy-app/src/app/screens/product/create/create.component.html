@@ -1,6 +1,8 @@
+<app-loading [showLoading]="showLoading"></app-loading>
+
 <div class="main-content">
 
-  <form [formGroup]="form" (ngSubmit)="save()">
+  <form [formGroup]="form">
     <div class="products-header">
       <h2 *ngIf="!isEdit">Criar Produto</h2>
       <h2 *ngIf="isEdit">Editar Produto</h2>

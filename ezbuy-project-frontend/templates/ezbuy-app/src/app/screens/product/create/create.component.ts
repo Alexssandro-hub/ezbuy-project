@@ -5,15 +5,23 @@ import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { CommonModule } from '@angular/common';
 import { ProductService } from '../../../services/product.service';
+import { HttpErrorResponse } from '@angular/common/http';
+import { LoadingComponent } from '../../../components/loading/loading.component';
 
 @Component({
   selector: 'app-create',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, LoadingComponent],
   templateUrl: './create.component.html',
   styleUrl: './create.component.scss'
 })
 export class CreateComponent implements OnInit {
+
+  showLoading = false;
+
+  toggleLoading(): void {
+    this.showLoading = !this.showLoading;
+  }
 
   form: FormGroup = this.buildForm();
 
@@ -54,27 +62,52 @@ export class CreateComponent implements OnInit {
   save(){
     var product = this.getProduct();
 
-    if (this.isEdit) {
+    if (product.id > 0) {
+      this.toggleLoading();
       this.productService.edit(product)
-      .subscribe((reponse) => {
-        if (reponse){
+      .subscribe((response) => {
+        if (response){
           this.toastrService.success('Entidade atualizada com sucesso!', 'Sucesso!');
+          this.back();
         }else{
           this.toastrService.error('Falha na tentativa de atualizar entidade!', 'Error!');
         }
+      }, (error: HttpErrorResponse) => {
+        const validationErrors = error.error.errors;
+
+        for (const fieldName in validationErrors) {
+          if (validationErrors.hasOwnProperty(fieldName)) {
+            const errorMessage = validationErrors[fieldName][0];
+            console.error(`Erro de validação para o campo ${fieldName}: ${errorMessage}`);
+            // Por exemplo, você pode exibir uma mensagem de erro ao usuário
+            this.toastrService.error(`Erro de validação para o campo ${fieldName}: ${errorMessage}`, 'Erro de validação');
+          }
+        }
       });
     } else {
+      this.toggleLoading();
       this.productService.save(product)
-      .subscribe((reponse) => {
-        if (reponse){
+      .subscribe((response) => {
+        if (response){
           this.toastrService.success('Entidade cadastrada com sucesso!', 'Sucesso!');
+          this.back();
         }else{
           this.toastrService.error('Falha na tentativa de cadastrar entidade!', 'Error!');
         }
+      },
+      (error: HttpErrorResponse) => {
+        const validationErrors = error.error.errors;
+
+        for (const fieldName in validationErrors) {
+          if (validationErrors.hasOwnProperty(fieldName)) {
+            const errorMessage = validationErrors[fieldName][0];
+            console.error(`Erro de validação para o campo ${fieldName}: ${errorMessage}`);
+            // Por exemplo, você pode exibir uma mensagem de erro ao usuário
+            this.toastrService.error(`Erro de validação para o campo ${fieldName}: ${errorMessage}`, 'Erro de validação');
+          }
+        }
       });
     }
-
-    this.back();
   }
 
   getProduct(): any {
