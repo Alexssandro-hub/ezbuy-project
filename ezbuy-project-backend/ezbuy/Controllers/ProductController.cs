@@ -5,21 +5,20 @@ using ezbuy.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ezbuy.Controllers
-{
+{ 
     [Route("api/[controller]")]
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private readonly DataContext _context;
-        //private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly DataContext _context; 
         private readonly TokenService _tokenService;
         public ProductController(DataContext context,
             TokenService tokenService, ILogger<ProductController> logger)
         {
-            _context = context;
-            //_httpContextAccessor = httpContextAccessor;
+            _context = context; 
             _tokenService = tokenService;
         }
 
@@ -41,21 +40,26 @@ namespace ezbuy.Controllers
 
             try
             {
-                var userId = GetUserId();
-                var product = new Product
+                if (ModelState.IsValid)
                 {
-                    Id = 0, 
-                    Category = productRequest.Category,
-                    Name = productRequest.Name,
-                    Description = productRequest.Description,
-                    Price = productRequest.Price, 
-                    CreateDate = DateTime.Now,
-                    CreatedUserId = userId == 0 ? 1 : userId //1: Admin.
-                };
+                    var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-                await _context.Products.AddAsync(product);
-                await _context.SaveChangesAsync();
-                return Ok(product);
+                    var product = new Product
+                    {
+                        Id = 0,
+                        Category = productRequest.Category,
+                        Name = productRequest.Name,
+                        Description = productRequest.Description,
+                        Price = productRequest.Price,
+                        CreateDate = DateTime.Now,
+                        CreatedUserId = Convert.ToInt32(userId) == 0 ? 1 : Convert.ToInt32(userId),
+                    };
+
+                    await _context.Products.AddAsync(product);
+                    await _context.SaveChangesAsync();
+                    return Ok(product);
+                }
+                return BadRequest("Não foi possível cadastrar entidade!");
             }
             catch (Exception ex)
             {
@@ -68,20 +72,24 @@ namespace ezbuy.Controllers
         {
             try
             {
-                var product = await _context.Products.Where(x => x.Id.Equals(productRequest.Id)).FirstOrDefaultAsync(); 
-                if (product is null) return BadRequest("Produto não encontrado!");
+                if (ModelState.IsValid)
+                {
+                    var product = await _context.Products.Where(x => x.Id.Equals(productRequest.Id)).FirstOrDefaultAsync();
+                    if (product is null) return BadRequest("Produto não encontrado!");
 
-                var userId = GetUserId();
+                    var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-                product.Name = productRequest.Name;
-                product.Description = productRequest.Description;
-                product.Category = productRequest.Category;
-                product.Price = productRequest.Price;
-                product.UpdatedDate = DateTime.Now;
-                product.UpdatedUserId = userId == 0 ? 1 : userId; //1: Admin.
+                    product.Name = productRequest.Name;
+                    product.Description = productRequest.Description;
+                    product.Category = productRequest.Category;
+                    product.Price = productRequest.Price;
+                    product.UpdatedDate = DateTime.Now;
+                    product.UpdatedUserId = Convert.ToInt32(userId) == 0 ? 1 : Convert.ToInt32(userId);
 
-                await _context.SaveChangesAsync();
-                return Ok(product);
+                    await _context.SaveChangesAsync();
+                    return Ok(product);
+                }
+                return BadRequest("Não foi possível atualizar entidade!");
             }
             catch (Exception ex)
             {
@@ -105,29 +113,6 @@ namespace ezbuy.Controllers
             {
                 return BadRequest(ex);
             }
-        }
-
-        #region  UserRegion
-
-        private int GetUserId()
-        {
-            //var httpContext = _httpContextAccessor.HttpContext;
-
-            //if (httpContext != null)
-            //{
-            //    var user = httpContext.User;
-
-            //    if (user != null)
-            //    { 
-            //        string userId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-
-            //        return Convert.ToInt32(userId);
-            //    }
-            //}
-
-            return 0;
-        }
-
-        #endregion
+        } 
     }
 }

@@ -81,10 +81,16 @@ builder.Services.AddSwaggerGen(
     }
     );
 
+
+builder.Services
+    .AddAuthentication()
+    .AddBearerToken();
+
+builder.Services.AddAuthorization();
+
 builder.Services.AddProblemDetails();
 builder.Services.AddApiVersioning();
-builder.Services.AddRouting(options => options.LowercaseUrls = true);
-
+builder.Services.AddRouting(options => options.LowercaseUrls = true); 
 builder.Services.AddCors(opts => opts.AddPolicy(name: "EzBuyOrigins",
     policy =>
     {
@@ -107,7 +113,7 @@ if (app.Environment.IsDevelopment())
  
 app.UseCors("EzBuyOrigins");
 app.UseHttpsRedirection();
-
+ 
 app.UseAuthorization();
 
 app.MapControllers();
