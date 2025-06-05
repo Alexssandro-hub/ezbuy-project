@@ -1,9 +1,10 @@
-﻿using System.Security.Cryptography;
+﻿using ezbuy.Services.Interfaces;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace ezbuy.Services
 {
-    public class EncryptPassService
+    public class EncryptPassService : IEncryptPassService
     {
         private const int _keySize = 64;
         private const int _iterations = 350000;

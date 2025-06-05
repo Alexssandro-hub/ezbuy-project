@@ -9,6 +9,7 @@ using System.Text.Json.Serialization;
 using ezbuy.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using ezbuy.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
  
@@ -19,9 +20,12 @@ builder.Services.AddControllers().AddJsonOptions(opt =>
  
 builder.Services.AddEndpointsApiExplorer();
 
-builder.Services.AddSingleton(typeof(EncryptPassService));
 builder.Services.AddSingleton(typeof(FluentValidationService));
-builder.Services.AddScoped<TokenService, TokenService>();
+builder.Services.AddSingleton<IEncryptPassService, EncryptPassService>();
+builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<IClaimsService, ClaimsService>();
+builder.Services.AddScoped<IJwtService, JwtService>();
+builder.Services.AddScoped<ISignInService, SignInService>(); 
  
 var validIssuer = builder.Configuration.GetValue<string>("JwtTokenSettings:ValidIssuer");
 var validAudience = builder.Configuration.GetValue<string>("JwtTokenSettings:ValidAudience");
