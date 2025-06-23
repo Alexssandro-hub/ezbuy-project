@@ -10,6 +10,8 @@ using ezbuy.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using ezbuy.Services.Interfaces;
+using ezbuy.Repos.Interfaces;
+using ezbuy.Repos;
 
 var builder = WebApplication.CreateBuilder(args);
  
@@ -25,8 +27,13 @@ builder.Services.AddSingleton<IEncryptPassService, EncryptPassService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IClaimsService, ClaimsService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
-builder.Services.AddScoped<ISignInService, SignInService>(); 
- 
+builder.Services.AddScoped<ISignInService, SignInService>();
+builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<ICartRepository, CartRepository>();
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+
+
 var validIssuer = builder.Configuration.GetValue<string>("JwtTokenSettings:ValidIssuer");
 var validAudience = builder.Configuration.GetValue<string>("JwtTokenSettings:ValidAudience");
 var symmetricSecurityKey = builder.Configuration.GetValue<string>("JwtTokenSettings:SymmetricSecurityKey");
