@@ -46,6 +46,22 @@ export class ProductComponent implements OnInit {
     this.router.navigateByUrl(`/product/create-or-edit`);
   }
 
+  addCart(product: any){
+    this.productService.addCart({
+      userId: 1,
+      productId: product.id,
+      quantity: 1
+    }).subscribe((response) => {
+
+      Swal.fire({
+        title: 'Produto adicionado ao carrinho com sucesso!',
+        text: 'Ao clicar novamente, estará adicionando mais um ao carrinho',
+        icon: 'success',
+        showCancelButton: true,
+      }).then((result) => { });
+    })
+  }
+
   delete(product: any){
     if (product != null){
       Swal.fire({

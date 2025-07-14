@@ -21,6 +21,7 @@
         <td >
           <div><i class="fas fa-edit" (click)="editProduct(product)"></i></div>
           <div><i class="fas fa-trash" (click)="delete(product)"></i></div>
+          <div><i class="fas fa-shopping-bag" (click)="addCart(product)"></i></div>
         </td>
         <td>{{ product.name }}</td>
         <td>{{ product.description }}</td>
@@ -30,3 +31,5 @@
     </tbody>
   </table>
 </div>
+
+

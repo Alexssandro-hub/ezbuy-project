@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
+using ezbuy.Services.Interfaces;
 
 namespace ezbuy.Controllers
 { 
@@ -14,9 +15,9 @@ namespace ezbuy.Controllers
     public class ProductController : ControllerBase
     {
         private readonly DataContext _context; 
-        private readonly TokenService _tokenService;
+        private readonly ITokenService _tokenService;
         public ProductController(DataContext context,
-            TokenService tokenService, ILogger<ProductController> logger)
+            ITokenService tokenService, ILogger<ProductController> logger)
         {
             _context = context; 
             _tokenService = tokenService;

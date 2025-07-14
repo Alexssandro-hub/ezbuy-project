@@ -1,7 +1,6 @@
 using System.Text;
 using ezbuy.Data;
-using ezbuy.Services;
-using Microsoft.AspNetCore.Identity;
+using ezbuy.Services; 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;

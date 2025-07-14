@@ -2,6 +2,7 @@
 using ezbuy.Models;
 using ezbuy.Models.DTOs.Request;
 using ezbuy.Services;
+using ezbuy.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,7 +10,7 @@ namespace ezbuy.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController(DataContext context, EncryptPassService encryptPassService, TokenService tokenService, ILogger<UserController> logger) : ControllerBase
+    public class UserController(DataContext context, IEncryptPassService encryptPassService, ITokenService tokenService, ILogger<UserController> logger) : ControllerBase
     { 
         [HttpGet]
         public async Task<IActionResult> GetAllUsers()

@@ -47,4 +47,8 @@ export class ProductService {
     return this.http.delete(this.apiUrl + `${id}`);
   }
 
+  addCart(product: any): Observable<any> {
+    return this.http.post('https://localhost:7294/api/Cart/' + 'add', product);
+  }
+
 }
