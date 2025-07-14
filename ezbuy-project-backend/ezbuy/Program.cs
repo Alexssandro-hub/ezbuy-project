@@ -31,7 +31,7 @@ builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<ICartRepository, CartRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IOrderService, OrderService>();
-
+builder.Services.AddHttpClient<OpenAIService>();
 
 var validIssuer = builder.Configuration.GetValue<string>("JwtTokenSettings:ValidIssuer");
 var validAudience = builder.Configuration.GetValue<string>("JwtTokenSettings:ValidAudience");

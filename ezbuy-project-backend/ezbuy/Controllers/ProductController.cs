@@ -16,11 +16,14 @@ namespace ezbuy.Controllers
     {
         private readonly DataContext _context; 
         private readonly ITokenService _tokenService;
+        private readonly OpenAIService _openAIService;
         public ProductController(DataContext context,
-            ITokenService tokenService, ILogger<ProductController> logger)
+            ITokenService tokenService, ILogger<ProductController> logger,
+            OpenAIService openAIService)
         {
             _context = context; 
             _tokenService = tokenService;
+            _openAIService = openAIService;
         }
 
         [HttpGet]
@@ -50,12 +53,21 @@ namespace ezbuy.Controllers
                         Id = 0,
                         Category = productRequest.Category,
                         Name = productRequest.Name,
-                        Description = productRequest.Description,
+                        Description = string.Empty,
                         Price = productRequest.Price,
                         CreateDate = DateTime.Now,
                         CreatedUserId = Convert.ToInt32(userId) == 0 ? 1 : Convert.ToInt32(userId),
                     };
 
+                    if (string.IsNullOrWhiteSpace(product.Description))
+                    {
+                        product.Description = await _openAIService.GenerateProductDescriptionAsync(
+                            product.Name,
+                            product.Category,
+                            string.Empty 
+                        );
+                    }
+                     
                     await _context.Products.AddAsync(product);
                     await _context.SaveChangesAsync();
                     return Ok(product);

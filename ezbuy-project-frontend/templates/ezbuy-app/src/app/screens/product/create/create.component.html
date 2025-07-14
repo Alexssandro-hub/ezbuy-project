@@ -13,7 +13,7 @@
         <input type="text" id="inputName" placeholder="Digite aqui o nome do produto.." formControlName="name">
       </div>
 
-      <div class="custom-input">
+      <div *ngIf="isEdit" class="custom-input">
         <label for="inputDescription">Descrição </label>
         <input type="text" id="inputDescription" placeholder="Digite aqui a descrição do produto.." formControlName="description">
       </div>
